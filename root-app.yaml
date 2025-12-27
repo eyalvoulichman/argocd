@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/eyalvoulichman/study-02.git'
+    repoURL: 'https://github.com/eyalvoulichman/argocd.git'
     targetRevision: HEAD
-    path: argocd/apps  # Argo CD will watch this folder for other apps
+    path: apps  # Since this repo IS the argocd folder, the path is just 'apps'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: argocd
